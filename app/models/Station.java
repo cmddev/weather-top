@@ -43,7 +43,7 @@ public class Station extends Model {
     public String windCompass;
     public double windChill;
 
-    public Station(String name, double longitude, double latitude) {
+    public Station(String name, double latitude,double longitude ) {
         this.name = name;
         this.longitude = longitude;
         this.latitude = latitude;
@@ -52,6 +52,10 @@ public class Station extends Model {
     public String getName() {
         return name;
     }
+    public double getLongitude() {return longitude;}
+    public double getLatitude() {return latitude;}
+
 
 }
+
 
