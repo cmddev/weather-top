@@ -3,7 +3,9 @@
 README: 
 WeatherTop Web is a web application that allows users of WeatherTop hand held weather monitoring devices to enter and track their weather readings for their given location or station. 
 Build using Java, HTML and utilizing the PLAY Framework, the WeatherTop web application is WeatherTop’s first foray into the world of technology. And it’s only the beginning! 
+
 The following functionality is available to WeatherTop customers: 
+
 Users can sign up to the application (create accounts).
 Users can log in to their existing accounts. 
 Users can add stations to their accounts. 
