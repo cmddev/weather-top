@@ -20,7 +20,9 @@ Workaround: refresh the page manually.
 2.	On the Reading view page for a station, the weather condition icon is not updating to be reflective of the latest weather summary. Current work around is to drop a static icon. 
 Expected result: The weather icon should update to match the weather condition, ie. If rainy, rain cloud icon, if sunny, sun icon. 
 Workaround: none. 
+
 Future Enhancements: 
+
 1.	User updates to profiles. 
 2.	Station dashboard page – present summary of latest weather readings on dashboard page for given station. 
 3.	Add trends to latest weather readings. 
