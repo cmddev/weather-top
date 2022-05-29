@@ -1,0 +1,36 @@
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+#{menu id:"dashboard"/}
+
+#{list items:stations, as:'station'}
+  <section class="ui segment">
+      <h3 class="ui header"></h3>
+         Location: ${station.location}
+      <div class="ui equal width left aligned padded grid">
+          <div class="row">
+              <div class="olive column">
+                  ${station.location}
+              </div>
+
+              <div class="black column">
+                  Weather
+              </div>
+
+              <div class="black column">
+                  Temp
+                  <br>
+                  ${station.temperature}
+              </div>
+
+              <div class="black column">
+                  Wind
+              </div>
+
+              <div class="black column">
+                  Pressure
+              </div>
+          </div>
+
+    #{listreadings station:station/}
+  </section>
+#{/list}

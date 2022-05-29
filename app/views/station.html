@@ -1,0 +1,13 @@
+#{extends 'main.html' /}
+#{set title:'Station' /}
+
+#{menu id:"dashboard"/}
+
+<section class="green ui segment">
+    #{latestweathersummary station:station /}
+    #{listreadings station:station/}
+    #{addreading station:station/}
+</section>
+
+
+

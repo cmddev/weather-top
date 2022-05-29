@@ -1,0 +1,30 @@
+#{extends 'main.html' /}
+#{set title:'About' /}
+
+#{menu id:"about"/}
+
+<section class="green ui segment">
+    <form class="ui form">
+        <h3 class="ui dividing header">Contact Us - We'd love to hear from you!</h3>
+        <div class="field">
+            <label>Name</label>
+            <div class="two fields">
+                <div class="field">
+                    <input type="text" name="contact[first-name]" placeholder="First Name">
+                </div>
+                <div class="field">
+                    <input type="text" name="contact[last-name]" placeholder="Last Name">
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label>Email</label>
+            <input type="text" name="email" placeholder="someone@something.com">
+        </div>
+        <div class="field">
+            <label>Your Message</label>
+            <textarea></textarea>
+        </div>
+        <button class="ui button" type="submit">Submit</button>
+    </form>
+</section>

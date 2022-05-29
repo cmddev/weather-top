@@ -1,0 +1,68 @@
+<section class="green ui segment" action="/stations/${_station.id}/addnewreadings" method="POST">
+    <h2 class="ui header">
+        Station: ${_station.name}
+    </h2>
+    <p>Current Weather Conditions @ ${_station.name}</p>
+
+    <div class="ui equal width left aligned padded grid">
+        <div class="teal column">
+            <h4 class="header">${_station.name}
+                <i class="right floated map marker icon large purple"></i></h4>
+            <h5>
+                lat: ${_station.longitude}
+                <br>
+                lng: ${_station.latitude}
+            </h5>
+        </div>
+
+        <div class="black column">
+            <h4 class="header">Weather <i class="right floated smog icon large red"></i></h4>
+<!--            <i class="right floated $(_station.latestWeatherIcons} large red"></i>-->
+            <h5>${_station.latestWeatherCondition} </h5>
+        </div>
+
+        <div class="black column">
+            <h4 class="header">Temp
+                <i class="right floated temperature high icon large blue"></i>
+            </h4>
+            <h5>
+                ${_station.latestTempCelsius} C
+                <br>
+                ${_station.latestTempFahrenheit} F
+                <br>
+                Min: ${_station.minTempCelsius} C
+                <br>
+                Max: ${_station.maxTempCelsius} C
+            </h5>
+        </div>
+
+        <div class="black column">
+            <h4 class="header"> Wind
+                <i class="right floated wind icon large green"></i></h4>
+            <h5> ${_station.beaufortScale} bft
+                <br>
+                Compass: ${_station.windCompass}
+                <br>
+                Feels like: ${_station.windChill} C
+                <br>
+                Min: ${_station.minWindSpeed}
+                <br>
+                Max: ${_station.maxWindSpeed}
+
+            </h5>
+        </div>
+
+        <div class="black column">
+            <h4 class="header"> Pressure
+                <i class="right floated compress arrows alternate icon large orange"></i></h4>
+            <h5>${_station.latestPressure} bpa
+                <br>
+                Min: ${_station.minPressure}
+                <br>
+                Max: ${_station.maxPressure}</h5>
+
+        </div>
+    </div>
+</section>
+
+
